@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view @click="toRequest">
 		首页
 	</view>
 </template>
@@ -15,7 +15,9 @@
 
 		},
 		methods: {
-
+			async toRequest() {
+				const result = await this.$u.get('https://api.shop.eduwork.cn/api/index')
+			}
 		}
 	}
 </script>
