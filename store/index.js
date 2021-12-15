@@ -34,6 +34,7 @@ const store = new Vuex.Store({
 		// 加上vuex_前缀，是防止变量名冲突，也让人一目了然
 		vuex_user: lifeData.vuex_user ? lifeData.vuex_user : {},
 		vuex_token: lifeData.vuex_token ? lifeData.vuex_token : '' ,
+		vuex_version: '1.1.1',
 	},
 	mutations: {
 		$uStore(state, payload) {

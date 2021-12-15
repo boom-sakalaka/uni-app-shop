@@ -29,6 +29,8 @@
 
 				const result = this.$u.api.getIndex()
 				console.log(result)
+				console.log(this.vuex_version)
+				
 			}
 
 		}

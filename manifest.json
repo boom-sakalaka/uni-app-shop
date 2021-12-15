@@ -1,5 +1,5 @@
 {
-    "name" : "uView-demo",
+    "name" : "uni_shop",
     "appid" : "__UNI__DE5C136",
     "description" : "",
     "versionName" : "1.5.0",
@@ -62,9 +62,10 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxc256e348c4032ebd",
+        "appid" : "",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : false,
+            "es6" : true
         },
         "usingComponents" : true
     },
