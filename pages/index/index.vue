@@ -16,8 +16,21 @@
 		},
 		methods: {
 			async toRequest() {
-				const result = await this.$u.get('https://api.shop.eduwork.cn/api/index')
+				// const result = await this.$u.post('/api/auth/login')
+				// console.log('123312')
+
+				// const result = await new Promise((resolve, reject) => {
+				// 	setTimeout(() => {
+				// 		reject('2')
+				// 	}, 2000)
+				// })
+
+				// console.log(result);
+
+				const result = this.$u.api.getIndex()
+				console.log(result)
 			}
+
 		}
 	}
 </script>
