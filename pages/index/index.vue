@@ -1,3 +1,11 @@
+<!--
+ * @Author: GZH
+ * @Date: 2021-12-14 10:47:46
+ * @LastEditors: GZH
+ * @LastEditTime: 2021-12-16 15:31:41
+ * @FilePath: \uni_shop\pages\index\index.vue
+ * @Description: 
+-->
 <template>
   <view class="u-p-b-20">
     <u-swiper :list="swperList" height="328" name="img_url"></u-swiper>
@@ -31,6 +39,7 @@
 export default {
   async onLoad() {
     this.getIndexData();
+    console.warn(getCurrentPages().pop());
   },
   data() {
     return {
